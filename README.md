@@ -1,2 +1,2 @@
-# leetcode repo 
+# LeetCode Repository 
 https://leetcode.com/aggresss
