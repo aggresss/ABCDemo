@@ -22,7 +22,7 @@ class Solution1 {
 };
 
 class Solution2 {
-public:
+  public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> v(2, 0);
         unordered_map<int, int> hash;
