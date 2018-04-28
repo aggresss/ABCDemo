@@ -45,26 +45,3 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     }
     return preHead.next;
 };
- 
-class Solution3 {
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-    	ListNode* head = new ListNode(-1);
-    	ListNode* p = head;
-    	ListNode* p1 = l1;
-    	ListNode* p2 = l2;
-    	int c = 0, val1, val2, sum;
-        while(p1 || p2 || c != 0){
-        	val1 = p1 == NULL ? 0 : p1->val;
-        	val2 = p2 == NULL ? 0 : p2->val;
-        	sum = val1 + val2 + c;
-        	c = sum/10;
-        	ListNode* node = new ListNode(sum%10);
-        	p->next = node;
-        	p = node;
-        	p1 = p1 != NULL ? p1->next : NULL;
-        	p2 = p2 != NULL ? p2->next : NULL;
-        }
-        return head->next;
-    }
-};
