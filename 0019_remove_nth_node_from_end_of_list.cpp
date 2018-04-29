@@ -23,7 +23,9 @@ public:
             head = head->next;
             p = p->next;
         }
+        head = p->next;
         p->next = p->next->next;
+        delete head;
         return preHead.next;
     }
 };
