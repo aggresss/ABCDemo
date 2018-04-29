@@ -2,7 +2,6 @@
 * Given a linked list, remove the n-th node from the end of list and return its head.
 */
 
-#include <iostream>
 using namespace std;
 
 struct ListNode {
