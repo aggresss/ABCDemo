@@ -49,10 +49,7 @@ class Solution2 {
             }
             p = p->next;
         }
-        if (l1)
-            p->next = l1;
-        else
-            p->next = l2;
+        p->next = l1 ? l1 : l2;
         return preHead.next;
     }
 };
